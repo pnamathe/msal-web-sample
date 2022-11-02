@@ -3,72 +3,25 @@
 
 package com.microsoft.azure.msalwebsample;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * Object containing configuration data for the application. Spring will automatically wire the
- * values by grabbing them from application.properties file
- */
+@Getter
+@Setter
 @Component
-@ConfigurationProperties("aad")
+@ConfigurationProperties("b2c")
 class BasicConfiguration {
+    String clientId;
+    String secret;
+    String redirectUri;
 
-    private String clientId;
-    private String authority;
-    private String redirectUriSignin;
-    private String redirectUriGraph;
-    private String secretKey;
-    private String msGraphEndpointHost;
+    String api;
+    String apiScope;
 
-    public String getAuthority(){
-        if (!authority.endsWith("/")) {
-            authority += "/";
-        }
-        return authority;
-    }
-
-    public String getClientId() {
-        return clientId;
-    }
-
-    public void setAuthority(String authority) {
-        this.authority = authority;
-    }
-
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
-    }
-
-    public String getRedirectUriSignin() {
-        return redirectUriSignin;
-    }
-
-    public void setRedirectUriSignin(String redirectUriSignin) {
-        this.redirectUriSignin = redirectUriSignin;
-    }
-
-    public String getRedirectUriGraph() {
-        return redirectUriGraph;
-    }
-
-    public void setRedirectUriGraph(String redirectUriGraph) {
-        this.redirectUriGraph = redirectUriGraph;
-    }
-
-    public String getSecretKey() {
-        return secretKey;
-    }
-
-    public void setSecretKey(String secretKey) {
-        this.secretKey = secretKey;
-    }
-
-    public void setMsGraphEndpointHost(String msGraphEndpointHost) {
-        this.msGraphEndpointHost = msGraphEndpointHost;
-    }
-
-    public String getMsGraphEndpointHost(){
-        return msGraphEndpointHost;
-    }
+    String signUpSignInAuthority;
+    String editProfileAuthority;
+    String resetPasswordAuthority;
 }

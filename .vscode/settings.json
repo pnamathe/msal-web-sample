@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "package:msal-b2c-web-sample",
+    "appService.deploySubpath": "target\\msal-b2c-web-sample-0.1.0.war",
+    "appService.defaultWebAppToDeploy": "/subscriptions/780a0731-ef39-4bcf-81ce-04fc79e35387/AppServices/subscriptions/780a0731-ef39-4bcf-81ce-04fc79e35387/resourceGroups/adb2c/providers/Microsoft.Web/sites/adb2c-webapp"
+}
