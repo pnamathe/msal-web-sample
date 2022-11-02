@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.microsoft.azure</groupId>
-	<artifactId>msal-b2c-web-sample</artifactId>
+	<artifactId>msal-b2c-sample</artifactId>
 	<packaging>war</packaging>
 	<version>0.1.0</version>
-	<name>msal-b2c-web-sample</name>
+	<name>msal-b2c-sample</name>
 	<description>B2C Web sample for Microsoft Authentication Library for Java</description>
 
 	<properties>

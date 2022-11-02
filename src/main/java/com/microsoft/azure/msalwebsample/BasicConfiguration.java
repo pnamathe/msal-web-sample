@@ -24,4 +24,68 @@ class BasicConfiguration {
     String signUpSignInAuthority;
     String editProfileAuthority;
     String resetPasswordAuthority;
+    
+    public String getClientId() {
+		return clientId;
+	}
+
+	public void setClientId(String clientId) {
+		this.clientId = clientId;
+	}
+
+	public String getSecret() {
+		return secret;
+	}
+
+	public void setSecret(String secret) {
+		this.secret = secret;
+	}
+
+	public String getRedirectUri() {
+		return redirectUri;
+	}
+
+	public void setRedirectUri(String redirectUri) {
+		this.redirectUri = redirectUri;
+	}
+
+	public String getApi() {
+		return api;
+	}
+
+	public void setApi(String api) {
+		this.api = api;
+	}
+
+	public String getApiScope() {
+		return apiScope;
+	}
+
+	public void setApiScope(String apiScope) {
+		this.apiScope = apiScope;
+	}
+
+	public String getEditProfileAuthority() {
+		return editProfileAuthority;
+	}
+
+	public void setEditProfileAuthority(String editProfileAuthority) {
+		this.editProfileAuthority = editProfileAuthority;
+	}
+
+	public String getResetPasswordAuthority() {
+		return resetPasswordAuthority;
+	}
+
+	public void setResetPasswordAuthority(String resetPasswordAuthority) {
+		this.resetPasswordAuthority = resetPasswordAuthority;
+	}
+
+	public String getSignUpSignInAuthority() {
+		return signUpSignInAuthority;
+	}
+
+	public void setSignUpSignInAuthority(String signUpSignInAuthority) {
+    	this.signUpSignInAuthority = signUpSignInAuthority;
+    }
 }
